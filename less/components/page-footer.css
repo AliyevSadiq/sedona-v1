@@ -1,0 +1,125 @@
+.footer-block {
+  position: relative;
+}
+.map-block {
+  height: 475px;
+}
+#map {
+  height: 100%;
+}
+.copy-right-block {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.copy-block {
+  width: 33%;
+  text-align: center;
+  text-transform: uppercase;
+}
+.hash-tag-block h3 {
+  font-size: 21px;
+  line-height: 26px;
+  color: #000;
+  font-weight: 700;
+  font-family: "PT Sans", "Bold", sans-serif;
+}
+.btn-list {
+  display: flex;
+  font-size: 0;
+  justify-content: center;
+}
+.btn-list li {
+  width: 46px;
+  height: 48px;
+  background-color: #81b3d1;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-list li:not(:first-child) {
+  margin-left: 6px;
+}
+.btn-list li:hover {
+  background-color: #669dc0;
+}
+.btn-list li:active {
+  background-color: #5495bd;
+}
+.btn-list li a {
+  display: block;
+}
+.btn-list .btn-tw {
+  width: 19px;
+  height: 15px;
+  background: url('../images/sprites.png') -10px -52px;
+}
+.btn-list .btn-fb {
+  width: 9px;
+  height: 19px;
+  background: url('../images/sprites.png') -96px -10px;
+}
+.btn-list .btn-yt {
+  width: 20px;
+  height: 14px;
+  background: url('../images/sprites.png') -49px -52px;
+}
+.developer-block {
+  display: flex;
+  align-items: center;
+}
+.developer-block p {
+  font-size: 14px;
+  line-height: 26px;
+  color: #000;
+  font-weight: 400;
+  font-family: "PT Sans", "Regular", sans-serif;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.developer-block svg {
+  cursor: pointer;
+}
+.developer-block svg:hover {
+  fill: #81b3d1;
+}
+.developer-block svg:active {
+  fill: #000;
+  opacity: 30%;
+}
+.interested-wrapper {
+  text-align: center;
+  color: #000;
+  text-transform: uppercase;
+  width: 434px;
+  margin-top: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 120px;
+}
+.interested-wrapper h3 {
+  font-size: 30px;
+  line-height: 26px;
+  font-weight: 700;
+  font-family: "PT Sans", "Bold", sans-serif;
+}
+.interested-wrapper p {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: "PT Sans", "Regular", sans-serif;
+}
+@media (max-width: 768px) {
+  .copy-right-block {
+    flex-direction: column;
+    min-height: 236px;
+  }
+  .interested-wrapper {
+    width: 280px;
+  }
+  .interested-wrapper h3 {
+    font-size: 21px;
+  }
+}

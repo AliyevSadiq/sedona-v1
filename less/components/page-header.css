@@ -1,0 +1,156 @@
+.header-block {
+  background-image: url("../images/header-background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 551px;
+}
+#navigation-fixed {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
+.main-navigation {
+  height: 56px;
+  background-color: #fff;
+  display: flex;
+  justify-content: stretch;
+  padding-left: 76px;
+}
+.menu-list {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu-list li {
+  width: 20%;
+}
+.menu-list li a {
+  font-size: 14px;
+  line-height: 26px;
+  color: #000;
+  font-weight: 700;
+  font-family: "PT Sans", "Bold", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+}
+.menu-list li a:hover {
+  color: #a3c7de;
+}
+.menu-list li a:active {
+  color: #000;
+  opacity: 30%;
+}
+.logo-block {
+  background-image: url("../images/sedona-logo-background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  position: absolute;
+  top: 0;
+  left: 42.4%;
+  width: 141px;
+}
+.btn {
+  cursor: pointer;
+  display: none;
+  position: absolute;
+}
+.page-header-intro {
+  width: 498px;
+  height: 373px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 150px;
+}
+@media (max-width: 890px) {
+  .main-navigation {
+    padding-left: 37px;
+  }
+  .logo-block {
+    left: 40.1%;
+  }
+}
+@media (max-width: 780px) {
+  .header-block {
+    height: 638px;
+  }
+  .main-navigation {
+    padding-left: 0;
+    flex-wrap: wrap;
+  }
+  .menu-list {
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0;
+  }
+  .menu-list li {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 100%;
+    background-color: #81b3d1;
+    text-align: center;
+    border-bottom: 1px solid #678fa7;
+  }
+  .menu-list li:hover {
+    background-color: #659dbf;
+  }
+  .menu-list li:active {
+    background-color: #5395bd;
+  }
+  .menu-list li:not(:first-child) {
+    border-top: 1px solid #9ac2da;
+  }
+  .menu-list li a {
+    font-size: 18px;
+    line-height: 40px;
+    color: #fff;
+    font-weight: 700;
+    font-family: "PT Sans", "Bold", sans-serif;
+  }
+  .logo-block {
+    position: static;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .page-header-intro {
+    width: 100%;
+    padding-top: 289px;
+    justify-content: space-around;
+  }
+  .sedona-title {
+    content: url("../images/sedona-mobile.png");
+    width: 280px;
+    height: 48px;
+  }
+  .grand-canyon {
+    content: url("../images/grand-canyon-mobile.png");
+    width: 197px;
+    height: 54px;
+  }
+  .close-btn {
+    top: 17px;
+    right: 20px;
+    width: 23px;
+    height: 22px;
+    background: url('../images/sprites.png') -53px -10px;
+  }
+  .burger-btn {
+    display: block;
+    bottom: 17px;
+    right: 20px;
+    width: 23px;
+    height: 22px;
+    background: url('../images/sprites.png') -10px -10px;
+  }
+}

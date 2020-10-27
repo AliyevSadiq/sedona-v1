@@ -1,0 +1,123 @@
+.advantage-title-block {
+  max-width: 486px;
+  min-height: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: #000;
+}
+.item-title {
+  line-height: 26px;
+  font-size: 21px;
+  font-weight: 700;
+  font-family: "PT Sans", "Bold", sans-serif;
+}
+.item-mini-descr {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "PT Sans", "Regular", sans-serif;
+}
+.advantage-block-item {
+  display: flex;
+  flex-direction: column;
+}
+.advantage-block-item:last-child {
+  margin-bottom: 0;
+}
+.advantage-item-img {
+  display: flex;
+}
+.left-block {
+  height: 100%;
+  width: 400px;
+  background-color: #81b3d1;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+.left-block .left-block-wrapper {
+  width: 253px;
+  height: 140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 58px;
+  padding-top: 58px;
+}
+.left-block .left-block-wrapper p {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  font-family: "PT Sans", "Regular", sans-serif;
+}
+.right-block {
+  flex-grow: 1;
+}
+.right-block img {
+  width: 100%;
+}
+.advantage-item-contents {
+  display: flex;
+  justify-content: space-between;
+  min-height: 333px;
+  align-items: center;
+}
+.content-item {
+  text-align: center;
+  text-transform: uppercase;
+  width: 400px;
+}
+.content-item .content-item-wrapper {
+  padding-left: 70px;
+  padding-right: 70px;
+}
+.content-item .content-item-wrapper p {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  font-family: "PT Sans", "Regular", sans-serif;
+}
+.second {
+  order: 1;
+}
+.grey-content {
+  background-color: #f1f1f1;
+}
+@media (max-width: 768px) {
+  .item-title {
+    font-size: 18px;
+  }
+  .advantage-item-img {
+    flex-direction: column;
+  }
+  .left-block {
+    width: 100%;
+  }
+  .right-block {
+    content: url("../images/advantage/advantage-item-1-mobile.png");
+  }
+  .advantage-block-item {
+    margin-bottom: 40px;
+  }
+  .advantage-item-contents {
+    flex-direction: column;
+  }
+  .content-item {
+    text-align: left;
+    display: flex;
+  }
+  .content-item:first-child {
+    padding-top: 30px;
+  }
+  .content-item .content-item-wrapper {
+    padding-left: 20px;
+    padding-right: 81px;
+  }
+  .grey {
+    text-align: center;
+  }
+  .second {
+    order: 0;
+  }
+}

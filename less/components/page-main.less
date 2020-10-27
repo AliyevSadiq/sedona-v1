@@ -1,0 +1,146 @@
+@import "../variables";
+.advantage-title-block{
+  max-width: 486px;
+  min-height: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: @color-black;
+
+
+}
+.item-title{
+  line-height: 26px;
+  font-size: 21px;
+  font-weight: 700;
+  font-family: @pt-sans-bold;
+}
+.item-mini-descr{
+  font-size: 14px;
+  font-weight: 400;
+  font-family: @pt-sans-regular;
+}
+.advantage-block-item{
+  display: flex;
+  flex-direction: column;
+
+  &:last-child{
+    margin-bottom: 0;
+  }
+
+}
+
+
+.advantage-item-img{
+  display: flex;
+}
+.left-block{
+  height: 100%;
+  width: 400px;
+  background-color: @color-light-blue-btn;
+  text-align: center;
+  text-transform: uppercase;
+  color: @color-white;
+
+  .left-block-wrapper{
+    width: 253px;
+    height: 140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 58px;
+    padding-top: 58px;
+    p{
+      font-size: 14px;
+      line-height: 21px;
+      font-weight: 400;
+      font-family: @pt-sans-regular;
+    }
+
+  }
+
+
+}
+.right-block{
+  flex-grow: 1;
+  img{
+    width: 100%;
+  }
+}
+
+.advantage-item-contents{
+  display: flex;
+  justify-content: space-between;
+  min-height: 333px;
+  align-items: center;
+
+}
+.content-item{
+  text-align: center;
+  text-transform: uppercase;
+  max-width: 400px;
+  .content-item-wrapper{
+    padding-left: 70px;
+    padding-right: 70px;
+    p{
+      font-size: 14px;
+      line-height: 21px;
+      font-weight: 400;
+      font-family: @pt-sans-regular;
+    }
+  }
+
+
+}
+.second{
+  order: 1;
+}
+.grey-content{
+  background-color: @color-light-grey;
+}
+
+
+@media (max-width: 768px) {
+  .item-title {
+    font-size: 18px;
+  }
+  .advantage-item-img {
+    flex-direction: column;
+  }
+  .left-block {
+    width: 100%;
+  }
+  .right-block {
+    content: url("../images/advantage/advantage-item-1-mobile.png");
+  }
+  .advantage-block-item{
+    margin-bottom: 40px;
+  }
+  .advantage-item-contents{
+    flex-direction: column;
+
+
+  }
+
+  .content-item{
+    text-align: left;
+    display: flex;
+    padding-left: 47px;
+    &:first-child{
+      padding-top: 30px;
+    }
+
+    .content-item-wrapper {
+      padding-left: 20px;
+      padding-right: 81px;
+    }
+  }
+  .grey{
+    text-align: center;
+  }
+  .second{
+    order: 0;
+  }
+
+}

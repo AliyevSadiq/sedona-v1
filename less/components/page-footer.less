@@ -1,0 +1,144 @@
+@import "../variables";
+.footer-block{
+  position: relative;
+}
+.map-block{
+  height: 475px;
+}
+#map{
+  height: 100%;
+
+}
+.copy-right-block{
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.copy-block{
+  width: 33%;
+  text-align: center;
+  text-transform: uppercase;
+}
+.hash-tag-block{
+  h3{
+    font-size: 21px;
+    line-height: 26px;
+    color: @color-black;
+    font-weight: 700;
+    font-family: @pt-sans-bold;
+  }
+}
+.btn-list{
+  display: flex;
+  font-size: 0;
+  justify-content: center;
+  li{
+    width: 46px;
+    height: 48px;
+    background-color: @color-light-blue-btn;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  &:not(:first-child){
+    margin-left: 6px;
+  }
+   &:hover{
+     background-color: @color-light-blue-btn-hover;
+   }
+    &:active{
+      background-color: @color-light-blue-btn-active;
+    }
+    a{
+      display: block;
+    }
+  }
+  .btn-tw{
+    width: 19px;
+    height: 15px;
+    background: url('../images/sprites.png') -10px -52px;
+  }
+  .btn-fb{
+    width: 9px;
+    height: 19px;
+    background: url('../images/sprites.png') -96px -10px;
+  }
+  .btn-yt{
+    width: 20px;
+    height: 14px;
+    background: url('../images/sprites.png') -49px -52px;
+  }
+}
+.developer-block{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p{
+    font-size: 14px;
+    line-height: 26px;
+    color: @color-black;
+    font-weight: 400;
+    font-family: @pt-sans-regular;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  svg{
+    cursor: pointer;
+    &:hover{
+       fill: @color-light-blue-btn;
+    }
+    &:active{
+      fill: @color-black;
+      opacity: 30%;
+    }
+  }
+}
+.interested-wrapper{
+  text-align: center;
+  color: @color-black;
+  text-transform: uppercase;
+  width: 434px;
+  margin-top: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 120px;
+  h3{
+    font-size: 30px;
+    line-height: 26px;
+    font-weight: 700;
+    font-family: @pt-sans-bold;
+  }
+  p{
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: @pt-sans-regular;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+
+  .copy-block{
+    width: 57%;
+    text-align: center;
+  }
+
+  .copy-right-block{
+    flex-direction: column;
+    min-height: 236px;
+  }
+  .interested-wrapper{
+    width: 280px;
+    h3{
+      font-size: 21px;
+    }
+    .developer-block{
+      p{
+        font-size: 13px;
+      }
+    }
+  }
+}
